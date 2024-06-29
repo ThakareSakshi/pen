@@ -14,7 +14,7 @@
 
 .banner-container{
     height:500px;
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
 }
 .banner-container img{
@@ -46,6 +46,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap:20px;
 }
 .card-wrapper{
     padding:10px;
@@ -55,12 +56,19 @@
     align-items: center;
     gap: 10px;
 }
+.card-wrapper:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px gray;
+}
 .card-image-container{
     width: 100%;
     height:auto;
     object-fit: contain;
-    border:2px solid rgb(179, 179, 179);
+    border:2px solid rgb(194, 194, 194);
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .card-image-container img{
     height:200px;
@@ -74,17 +82,19 @@
     border: none;
     outline: none;
     border-radius: 30px;
+    font-size: 18px;
     
 }
 
 .pen-name{
-    padding:10px 40px;
+    padding:10px ;
     background-color:#00599c;
     color:white;
     border: none;
     outline: none;
+    width: 100%;
     border-radius: 30px;
-    font-size: 22px;
+    font-size: 18px;
     
 }
 
